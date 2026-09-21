@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" width="100%" height="100%">
+  <defs>
+    <path id="curve-quebra" d="M 30 102 Q 220 72 410 102" fill="none" />
+    <path id="curve-cabeca" d="M 35 168 Q 230 146 425 168" fill="none" />
+    <filter id="shadow-q" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow-q)">
+    <!-- Text: QUEBRA -->
+    <text font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="70" fill="#0c3660" letter-spacing="2">
+      <textPath href="#curve-quebra" startOffset="44%" text-anchor="middle">QUEBRA</textPath>
+    </text>
+
+    <!-- Text: CABEÇA -->
+    <text font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="64" fill="#0ea344" letter-spacing="1.5">
+      <textPath href="#curve-cabeca" startOffset="46%" text-anchor="middle">CABEÇA</textPath>
+    </text>
+
+    <!-- Underline Smile -->
+    <path d="M 75 186 Q 240 216 405 186" fill="none" stroke="#0ea344" stroke-width="7.5" stroke-linecap="round" />
+
+    <!-- Puzzle Pieces Illustration at Top Right -->
+    <g transform="translate(395, 30)">
+      <!-- Green Puzzle Piece -->
+      <path d="M 20 20 H 45 C 45 12, 55 12, 55 20 H 70 V 35 C 78 35, 78 45, 70 45 V 60 H 55 C 55 52, 45 52, 45 60 H 20 V 45 C 28 45, 28 35, 20 35 Z"
+            fill="#0ea344" rx="2" />
+
+      <!-- Orange Puzzle Piece Interlocking -->
+      <g transform="translate(30, 24) rotate(12)">
+        <path d="M 20 20 H 45 C 45 12, 55 12, 55 20 H 70 V 35 C 78 35, 78 45, 70 45 V 60 H 55 C 55 68, 45 68, 45 60 H 20 V 45 C 12 45, 12 35, 20 35 Z"
+              fill="#f58220" rx="2" opacity="0.95" />
+      </g>
+
+      <!-- Small Leaves surrounding Puzzle -->
+      <path d="M 40 8 C 45 0, 55 3, 53 11 C 48 16, 38 14, 40 8 Z" fill="#0ea344" />
+      <path d="M 88 35 C 96 30, 102 38, 97 45 C 90 50, 84 42, 88 35 Z" fill="#0ea344" />
+      <path d="M 85 102 C 92 95, 102 100, 98 108 C 92 115, 80 110, 85 102 Z" fill="#0ea344" />
+      <path d="M 22 85 C 28 80, 34 86, 31 92 C 26 96, 18 90, 22 85 Z" fill="#0ea344" />
+    </g>
+  </g>
+</svg>
