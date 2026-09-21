@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" width="100%" height="100%">
+  <defs>
+    <path id="curve-caca" d="M 60 100 Q 270 70 480 100" fill="none" />
+    <path id="curve-palavras" d="M 50 165 Q 270 145 490 165" fill="none" />
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- Droplet Accents on Top Left -->
+    <path d="M 85 42 C 92 32, 102 36, 100 48 C 98 58, 80 50, 85 42 Z" fill="#f58220" />
+    <path d="M 58 75 C 68 70, 74 78, 68 86 C 62 92, 50 82, 58 75 Z" fill="#0ea344" />
+
+    <!-- Droplet Accents on Top Right -->
+    <path d="M 455 42 C 448 32, 438 36, 440 48 C 442 58, 460 50, 455 42 Z" fill="#f58220" />
+    <path d="M 478 78 C 468 74, 464 84, 470 90 C 478 96, 488 84, 478 78 Z" fill="#0ea344" />
+
+    <!-- Text: CAÇA -->
+    <text font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="76" fill="#0c3660" letter-spacing="2">
+      <textPath href="#curve-caca" startOffset="50%" text-anchor="middle">CAÇA</textPath>
+    </text>
+
+    <!-- Text: PALAVRAS -->
+    <text font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="64" fill="#0ea344" letter-spacing="1">
+      <textPath href="#curve-palavras" startOffset="50%" text-anchor="middle">PALAVRAS</textPath>
+    </text>
+
+    <!-- Smile / Arc underline -->
+    <path d="M 105 186 Q 270 216 435 186" fill="none" stroke="#0ea344" stroke-width="7.5" stroke-linecap="round" />
+
+    <!-- Leaves on the right end of smile -->
+    <g transform="translate(442, 178) rotate(-15)">
+      <path d="M 0 0 C 14 -12, 28 -8, 30 6 C 26 20, 10 16, 0 0 Z" fill="#0ea344" />
+      <path d="M 0 0 Q 15 2 28 6" fill="none" stroke="#097a31" stroke-width="1.5" />
+    </g>
+    <g transform="translate(452, 192) rotate(20)">
+      <path d="M 0 0 C 10 -8, 20 -4, 20 5 C 16 14, 6 10, 0 0 Z" fill="#0ea344" />
+    </g>
+  </g>
+</svg>
