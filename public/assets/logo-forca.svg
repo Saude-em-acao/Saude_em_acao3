@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" width="100%" height="100%">
+  <defs>
+    <filter id="shadow-f" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow-f)">
+    <!-- Gallows Illustration at Top Center -->
+    <g transform="translate(200, 22)">
+      <!-- Main Post and Arm -->
+      <path d="M 40 70 V 15 C 40 10, 44 6, 50 6 H 105 C 110 6, 114 10, 114 15 V 20 C 114 24, 110 28, 105 28 H 58 V 70 Z" fill="#0ea344" />
+      <!-- Support Bracket / Diagonal -->
+      <path d="M 40 32 L 65 6 H 55 L 40 22 Z" fill="#097a31" opacity="0.3" />
+      <!-- Hanging Rope & Loop -->
+      <path d="M 85 24 V 50" fill="none" stroke="#0ea344" stroke-width="5" stroke-linecap="round" />
+      <circle cx="85" cy="58" r="9" fill="none" stroke="#0ea344" stroke-width="5.5" />
+    </g>
+
+    <!-- Droplet Accents Left -->
+    <path d="M 68 105 C 75 96, 86 100, 83 110 C 80 120, 60 114, 68 105 Z" fill="#f58220" />
+    <path d="M 52 135 C 60 128, 68 135, 62 142 C 55 148, 45 142, 52 135 Z" fill="#f58220" />
+    <g transform="translate(72, 165) rotate(-30)">
+      <path d="M 0 0 C 14 -12, 28 -8, 30 6 C 26 20, 10 16, 0 0 Z" fill="#0ea344" />
+    </g>
+
+    <!-- Droplet Accents Right -->
+    <path d="M 470 105 C 462 96, 452 100, 455 110 C 458 120, 478 114, 470 105 Z" fill="#f58220" />
+    <path d="M 485 135 C 478 128, 470 135, 475 142 C 482 148, 492 142, 485 135 Z" fill="#f58220" />
+    <g transform="translate(460, 168) rotate(30)">
+      <path d="M 0 0 C 14 -12, 28 -8, 30 6 C 26 20, 10 16, 0 0 Z" fill="#0ea344" />
+    </g>
+
+    <!-- Text: FORCA -->
+    <text x="270" y="155" font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="94" fill="#0c3660" text-anchor="middle" letter-spacing="4">
+      FORCA
+    </text>
+
+    <!-- Underline Smile -->
+    <path d="M 125 178 Q 270 205 415 178" fill="none" stroke="#0ea344" stroke-width="7.5" stroke-linecap="round" />
+  </g>
+</svg>
