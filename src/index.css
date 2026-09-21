@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-leaf: var(--leaf);
+  --color-sun: var(--sun);
+  --color-berry: var(--berry);
+  --color-tomato: var(--tomato);
+}
+
+html,
+:root {
+  font-size: 100%;
+  --radius: 1rem;
+  --background: #fcf5e3;
+  --foreground: #133015;
+  --card: #fffcf2;
+  --card-foreground: #133015;
+  --popover: #fffcf2;
+  --popover-foreground: #133015;
+  --primary: #207029;
+  --primary-foreground: #fef8ea;
+  --secondary: #c3e2bc;
+  --secondary-foreground: #06320c;
+  --muted: #ece9d2;
+  --muted-foreground: #4a5b46;
+  --accent: #f0ba59;
+  --accent-foreground: #361900;
+  --destructive: #db2d27;
+  --destructive-foreground: #fef8ea;
+  --border: #c8d7bb;
+  --input: #d7e2ce;
+  --ring: #38853e;
+  --leaf: #43a84c;
+  --sun: #f3ba25;
+  --berry: #854494;
+  --tomato: #ea3d35;
+}
+
+.dark {
+  --background: #0d1a0d;
+  --foreground: #f4eee0;
+  --card: #152715;
+  --card-foreground: #f4eee0;
+  --popover: #152715;
+  --popover-foreground: #f4eee0;
+  --primary: #6bc670;
+  --primary-foreground: #051c07;
+  --secondary: #223a23;
+  --secondary-foreground: #f4eee0;
+  --muted: #213321;
+  --muted-foreground: #a8b29e;
+  --accent: #cd9200;
+  --accent-foreground: #251000;
+  --destructive: #f14f43;
+  --destructive-foreground: #fef8ea;
+  --border: #ffffff1f;
+  --input: #ffffff2e;
+  --ring: #5bb661;
+}
+
+@keyframes pontos-sobe {
+  0% { opacity: 0; transform: translate(-50%, 6px) scale(0.85); }
+  25% { opacity: 1; transform: translate(-50%, -6px) scale(1.06); }
+  70% { opacity: 1; transform: translate(-50%, -18px) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -34px) scale(0.95); }
+}
+
+@keyframes cuidado-pulsa {
+  0% { transform: scale(1); }
+  45% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+body {
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+}
+
+/* 3D Flip Card Utilities */
+.flip-card-container {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-card-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
