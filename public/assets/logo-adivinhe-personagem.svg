@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" width="100%" height="100%">
+  <defs>
+    <filter id="shadow-a" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow-a)">
+    <!-- Droplet Accents Top/Left -->
+    <path d="M 48 68 C 55 60, 65 65, 62 74 C 58 82, 42 76, 48 68 Z" fill="#f58220" />
+    <path d="M 40 98 C 48 94, 52 102, 48 108 C 42 114, 34 105, 40 98 Z" fill="#0ea344" />
+    <path d="M 72 135 C 80 128, 88 135, 82 142 C 75 148, 66 142, 72 135 Z" fill="#f58220" />
+    <path d="M 98 168 C 105 162, 112 168, 108 175 C 102 180, 92 174, 98 168 Z" fill="#0ea344" />
+
+    <path d="M 218 36 C 224 28, 232 32, 230 40 C 226 46, 214 42, 218 36 Z" fill="#f58220" />
+    <path d="M 235 45 C 242 38, 250 42, 246 50 C 240 56, 230 52, 235 45 Z" fill="#0ea344" />
+
+    <!-- 3-Line Text -->
+    <!-- Line 1: ADIVINHE O -->
+    <text x="80" y="80" font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="38" fill="#0c3660" letter-spacing="1.5">
+      ADIVINHE O
+    </text>
+
+    <!-- Line 2: PERSONAGEM -->
+    <text x="65" y="132" font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="50" fill="#0ea344" letter-spacing="1">
+      PERSONAGEM
+    </text>
+
+    <!-- Line 3: ESCONDIDO -->
+    <text x="95" y="176" font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="42" fill="#0c3660" letter-spacing="1.5">
+      ESCONDIDO
+    </text>
+
+    <!-- Underline Smile -->
+    <path d="M 85 194 Q 235 214 365 194" fill="none" stroke="#0ea344" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Magnifying Glass with Question Mark on Right -->
+    <g transform="translate(375, 55)">
+      <!-- Glass Lens Circle Outer Rim -->
+      <circle cx="55" cy="55" r="44" fill="#ffffff" stroke="#0ea344" stroke-width="12" />
+
+      <!-- Question Mark -->
+      <text x="55" y="75" font-family="system-ui, -apple-system, sans-serif, Impact" font-weight="900" font-size="62" fill="#0c3660" text-anchor="middle">
+        ?
+      </text>
+
+      <!-- Handle -->
+      <path d="M 26 84 L 5 125 C 2 131, 8 137, 14 134 L 50 100 Z" fill="#0ea344" stroke="#0ea344" stroke-width="4" stroke-linejoin="round" />
+
+      <!-- Leaves around Handle -->
+      <g transform="translate(18, 120) rotate(-40)">
+        <path d="M 0 0 C 12 -10, 24 -6, 25 6 C 22 18, 8 14, 0 0 Z" fill="#0ea344" />
+      </g>
+      <g transform="translate(42, 130) rotate(15)">
+        <path d="M 0 0 C 10 -8, 20 -4, 20 5 C 16 14, 6 10, 0 0 Z" fill="#0ea344" />
+      </g>
+      <!-- Orange droplet -->
+      <path d="M 68 132 C 75 126, 82 132, 78 138 C 72 144, 64 138, 68 132 Z" fill="#f58220" />
+      <path d="M 98 90 C 105 84, 112 90, 108 97 C 102 103, 94 97, 98 90 Z" fill="#0ea344" />
+    </g>
+  </g>
+</svg>
