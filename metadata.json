@@ -1,0 +1,8 @@
+{
+  "name": "Remix Saúde em Ação",
+  "description": "Projeto educativo sobre o impacto dos defensores agrícolas na saúde humana, alinhado à ODS 3 da ONU.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
